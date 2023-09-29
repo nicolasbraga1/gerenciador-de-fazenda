@@ -26,7 +26,16 @@ public class Person {
 
   private Role role;
 
-  public Person() {
+  public Person() {}
+
+  /**
+   * Contrutor da classe.
+   */
+  public Person(Long id, String username, String password, Role role) {
+    this.id = id;
+    this.username = username;
+    this.password = password;
+    this.role = role;
   }
 
   public Long getId() {
